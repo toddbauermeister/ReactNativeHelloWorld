@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import TextConstants from './TextConstants';
 
 export default App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hello World 🎊</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView>
+      <View style={styles.container}> 
+        <Text>
+          {TextConstants.headings.coolCat}
+        </Text>
+      </View>
+    </ScrollView>
   );
 }
 
@@ -17,5 +21,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 100,
   },
 });
