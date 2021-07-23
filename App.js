@@ -1,12 +1,12 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import TextConstants from './TextConstants';
 
 const App = () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text>
+        <Text style={styles.colorBlue}>
           {TextConstants.headings.Cool_Cat}
         </Text>
         <Image source={{
@@ -17,9 +17,10 @@ const App = () => {
             height: 200,
           }}
         />
-        <Text style={styles.marginTop45}>
+        <Text style={[styles.marginTop45,styles.colorBlue]}>
           {TextConstants.blurbs.App_Description}
         </Text>
+        <TextInput placeholder={'Type Things Here'} style={styles.marginTop45}  />
       </View>
     </ScrollView>
   );
@@ -35,6 +36,9 @@ const styles = StyleSheet.create({
   },
   marginTop45: {
     marginTop: 45,
+  },
+  colorBlue: {
+    color: 'blue',
   }
 });
 
