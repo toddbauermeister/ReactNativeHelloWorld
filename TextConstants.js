@@ -1,7 +1,12 @@
 // Keep all the textConstants the system may need for UI
 // i.e. display purposes
-export default textConstants = {
+const textConstants = {
     headings: {
-        coolCat: 'Cool Cat'
-    }
+        Cool_Cat: 'Cool Cat'
+    },
+    blurbs: {
+        App_Description: 'A Hello World App by Todd Bauermeister'
+    },
 };
+
+export default textConstants;

@@ -1,14 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
 import TextConstants from './TextConstants';
 
-export default App = () => {
+const App = () => {
   return (
     <ScrollView>
-      <View style={styles.container}> 
+      <View style={styles.container}>
         <Text>
-          {TextConstants.headings.coolCat}
+          {TextConstants.headings.Cool_Cat}
+        </Text>
+        <Image source={{
+          uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
+        }}
+          style={{
+            width: 200,
+            height: 200,
+          }}
+        />
+        <Text style={styles.marginTop45}>
+          {TextConstants.blurbs.App_Description}
         </Text>
       </View>
     </ScrollView>
@@ -23,4 +33,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 100,
   },
+  marginTop45: {
+    marginTop: 45,
+  }
 });
+
+export default App;
