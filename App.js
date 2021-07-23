@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ScrollView, StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import Styles from './Styles';
 import TextConstants from './TextConstants';
 
 const App = () => {
@@ -7,8 +8,8 @@ const App = () => {
 
   return (
     <ScrollView>
-      <View style={styles.container}>
-        <Text style={styles.colorBlue}>
+      <View style={Styles.container}>
+        <Text style={Styles.colorBlue}>
           {TextConstants.headings.Cool_Cat}
         </Text>
         <Image source={{
@@ -19,13 +20,13 @@ const App = () => {
             height: 200,
           }}
         />
-        <Text style={[styles.marginTop45,styles.colorBlue]}>
+        <Text style={[Styles.marginTop45,Styles.colorBlue]}>
           {TextConstants.blurbs.App_Description}
         </Text>
-        <TextInput placeholder={'Type Things Here'} style={styles.marginTop45} onBlur={(e) => setText(e.nativeEvent.text)}/>
+        <TextInput placeholder={'Type Things Here'} style={Styles.marginTop45} onBlur={(e) => setText(e.nativeEvent.text)}/>
         {
           text &&
-          <Text style={[styles.marginTop45,styles.colorBlue]}>
+          <Text style={[Styles.marginTop45,Styles.colorBlue]}>
             You typed: {text}
           </Text>
         }
@@ -33,21 +34,5 @@ const App = () => {
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 100,
-  },
-  marginTop45: {
-    marginTop: 45,
-  },
-  colorBlue: {
-    color: 'blue',
-  }
-});
 
 export default App;
