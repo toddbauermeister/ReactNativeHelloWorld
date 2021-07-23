@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ScrollView, StyleSheet, Text, View, Image, TextInput } from 'react-native';
 import TextConstants from './TextConstants';
 
 const App = () => {
+  const [text, setText] = useState ('')
+
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -20,7 +22,13 @@ const App = () => {
         <Text style={[styles.marginTop45,styles.colorBlue]}>
           {TextConstants.blurbs.App_Description}
         </Text>
-        <TextInput placeholder={'Type Things Here'} style={styles.marginTop45}  />
+        <TextInput placeholder={'Type Things Here'} style={styles.marginTop45} onBlur={(e) => setText(e.nativeEvent.text)}/>
+        {
+          text &&
+          <Text style={[styles.marginTop45,styles.colorBlue]}>
+            You typed: {text}
+          </Text>
+        }
       </View>
     </ScrollView>
   );
