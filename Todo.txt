@@ -1,7 +1,9 @@
 Functionality:
 - Write an API to fetch some data
 - Use this data to start expermimenting with the front-end
+- Add ESLint
 
 Learning:
 - React hooks https://reactjs.org/docs/hooks-intro.html
 - Types of js imports (I'm used to export const or export default) 
+- Auto add missing imports in vsCode
