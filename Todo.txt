@@ -7,3 +7,4 @@ Learning:
 - React hooks https://reactjs.org/docs/hooks-intro.html
 - Types of js imports (I'm used to export const or export default) 
 - Auto add missing imports in vsCode
+- Styling in react native

@@ -5,7 +5,6 @@ const textConstants = {
         Cool_Cat: 'Cool Cat'
     },
     blurbs: {
-        App_Description: 'A Hello World App by Todd Bauermeister'
     },
 };
 

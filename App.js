@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { ScrollView, StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import React from 'react';
+import { ScrollView, View } from 'react-native';
 import Cat from './Cat';
 import Styles from './Styles';
-import TextConstants from './TextConstants';
 
 const App = () => {
   return (
     <ScrollView>
       <View style={Styles.container}>
-        <Cat />
+        <Cat name="Todd" imageUrl="https://reactnative.dev/docs/assets/p_cat2.png"/>
+        <Cat name="Clari"imageUrl="https://reactnative.dev/docs/assets/p_cat1.png"/>
       </View>
     </ScrollView>
   );

@@ -4,6 +4,10 @@ import textConstants from "./TextConstants";
 import { Text, Image, TextInput } from "react-native";
 
 const Cat = (props) => {
+
+  // Props
+  const { name, imageUrl, hasInput=false, hasHeading=false } = props;
+
   // creates a property in state called 'text'
   // creates a function called setText which can alter the value of the property 'text'
   // call useState and give the default value for 'text', in this case an empty string
@@ -11,20 +15,25 @@ const Cat = (props) => {
   const [text, setText] = useState("");
   return (
     <>
-      <Text style={Styles.colorBlue}>{textConstants.headings.Cool_Cat}</Text>
+      {/* Cool Cat */}
+      {
+        hasHeading && 
+        <Text style={Styles.colorBlue}>{textConstants.headings.Cool_Cat}</Text>
+      }
       <Image
         source={{
-          uri: "https://reactnative.dev/docs/assets/p_cat2.png",
+          uri: imageUrl,
         }}
         style={{
           width: 200,
           height: 200,
         }}
       />
+      {/* Hello, my name is */}
       <Text style={[Styles.marginTop45, Styles.colorBlue]}>
-        {textConstants.blurbs.App_Description}
+        Hello, my name is {name}
       </Text>
-      {props.hasInput && (
+      {hasInput && (
         <>
           <TextInput
             placeholder={"Type Things Here"}
