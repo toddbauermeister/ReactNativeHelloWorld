@@ -5,7 +5,7 @@ Functionality:
 
 Learning:
 - React hooks https://reactjs.org/docs/hooks-intro.html
+- Expo CLI (particularly, how to debug) https://docs.expo.io/workflow/debugging/
+- Styling in react native
 - Types of js imports (I'm used to export const or export default) 
 - Auto add missing imports in vsCode
-- Styling in react native
-- How to debug and see values at runtime
