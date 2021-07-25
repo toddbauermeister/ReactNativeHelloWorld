@@ -1,7 +1,7 @@
 Functionality:
 - Write an API to fetch some data
 - Use this data to start expermimenting with the front-end
-- Add ESLint
+- Add ESLint (what is a nice profile, maybe other than Airbnb?) https://xenox.dev/eslint-the-easy-but-complete-guide/
 
 Learning:
 - React hooks https://reactjs.org/docs/hooks-intro.html

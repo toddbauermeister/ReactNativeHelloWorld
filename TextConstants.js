@@ -9,6 +9,10 @@ const textConstants = {
     buttonText: {
         IAmHungryPleaseFeedMe: 'I am hungry, please feed me',
         IHaveEatenThanksForTheFood: 'I have eaten, thanks for the food',
+    },
+    catNames: {
+        Todd: "Todd",
+        Clari: "Clari",
     }
 };
 

@@ -7,7 +7,7 @@ import systemConstants from "./SystemConstants";
 const Cat = (props) => {
 
   // Props
-  const { name, hasInput=false, hasHeading=false } = props;
+  const { name, hasHeading=false } = props;
 
   // INPUT STATE HANDLING
   // creates a property in state called 'isHungry'
@@ -32,7 +32,7 @@ const Cat = (props) => {
           height: 200,
         }}
       />
-      
+
       {/* Hello, my name is */}
       <Text style={[Styles.marginTop45, Styles.colorBlue]}>
         Hello, my name is {name}
