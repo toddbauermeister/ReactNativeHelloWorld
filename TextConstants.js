@@ -2,10 +2,14 @@
 // i.e. display purposes
 const textConstants = {
     headings: {
-        Cool_Cat: 'Cool Cat'
+        CoolCat: 'Cool Cat'
     },
     blurbs: {
     },
+    buttonText: {
+        IAmHungryPleaseFeedMe: 'I am hungry, please feed me',
+        IHaveEatenThanksForTheFood: 'I have eaten, thanks for the food',
+    }
 };
 
 export default textConstants;
