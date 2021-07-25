@@ -1,4 +1,4 @@
-// Keep all the textConstants the system may need for UI
+// Keep all the Text Constants the system may need for UI
 // i.e. display purposes
 const textConstants = {
     headings: {
