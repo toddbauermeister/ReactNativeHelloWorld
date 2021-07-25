@@ -7,8 +7,8 @@ const App = () => {
   return (
     <ScrollView>
       <View style={Styles.container}>
-        <Cat name="Todd" imageUrl="https://reactnative.dev/docs/assets/p_cat2.png"/>
-        <Cat name="Clari"imageUrl="https://reactnative.dev/docs/assets/p_cat1.png"/>
+        <Cat name="Todd"/>
+        <Cat name="Clari"/>
       </View>
     </ScrollView>
   );
