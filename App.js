@@ -4,6 +4,9 @@ import Styles from './Styles';
 import TextConstants from './TextConstants';
 
 const App = () => {
+  // creates a property in state called 'text'
+  // creates a function called setText which can alter the value of the property 'text'
+  // call useState and give the default value for 'text', in this case an empty string
   const [text, setText] = useState ('')
 
   return (
