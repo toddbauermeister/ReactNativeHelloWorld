@@ -9,3 +9,4 @@ Learning:
 - Styling in react native
 - Types of js imports (I'm used to export const or export default) 
 - Auto add missing imports in vsCode
+- Fix npm vulnerabilities
