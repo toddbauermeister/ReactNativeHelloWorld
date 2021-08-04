@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "./Styles";
 import textConstants from "./TextConstants";
-import { Text, Image, TextInput, Button } from "react-native";
+import { Text, Image, Button } from "react-native";
 import systemConstants from "./SystemConstants";
 
 const Cat = (props) => {
