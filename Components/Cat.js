@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Styles from "./Styles";
-import textConstants from "./TextConstants";
 import { Text, Image, Button } from "react-native";
-import systemConstants from "./SystemConstants";
-import { get, post } from "./Api";
+import systemConstants from "../Utility/SystemConstants";
+import textConstants from "../Utility/TextConstants";
+import { get, post } from "../Api/Api";
+import Styles from "../Utility/Styles";
 
 const Cat = (props) => {
 
@@ -16,6 +16,8 @@ const Cat = (props) => {
   // call useState and give the default value for 'isHungry', in this case false
   // [<getter>, <setter>] = useState(<initialValue>)
   const [isCatHungry, setIsCatHungry] = useState(true);
+
+  textConstants
 
   useEffect(async () => {
     const x = await get('https://thatcopy.pw/catapi/rest/');

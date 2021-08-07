@@ -1,8 +1,9 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
-import Cat from './Cat';
-import Styles from './Styles';
-import textConstants from './TextConstants';
+import Cat from './Components/Cat';
+import Styles from './Utility/Styles';
+import textConstants from './Utility/TextConstants';
+
 
 const App = () => {
   return (
