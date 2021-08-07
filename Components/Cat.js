@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Text, Image, Button } from "react-native";
 import systemConstants from "../Utility/SystemConstants";
 import textConstants from "../Utility/TextConstants";
-import { get, post } from "../Api/Api";
+import { get, post } from "../Api/ApiHandler";
 import Styles from "../Utility/Styles";
 
 const Cat = (props) => {
