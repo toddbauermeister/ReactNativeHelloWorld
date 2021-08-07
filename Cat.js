@@ -17,8 +17,8 @@ const Cat = (props) => {
   // [<getter>, <setter>] = useState(<initialValue>)
   const [isCatHungry, setIsCatHungry] = useState(true);
 
-  useEffect(() => {
-    const x = get('https://thatcopy.pw/catapi/rest/');
+  useEffect(async () => {
+    const x = await get('https://thatcopy.pw/catapi/rest/');
   }, []);
 
   return (
