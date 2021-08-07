@@ -20,7 +20,7 @@ const Cat = (props) => {
 
   useEffect(async () => {
     const x = await get('https://thatcopy.pw/catapi/rest/');
-    // const y = await ApiCatFacts(); TODO figure out why ApiCatFacts doesn't work, something to do with promises
+    // const y = await ApiCatFacts(); TODO figure out why ApiCatFacts doesn't work, think endpoint may be broken lol
   }, []);
 
   return (
