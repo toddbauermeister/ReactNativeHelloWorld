@@ -7,7 +7,13 @@ const systemConstants = {
             hungryCat: "https://reactnative.dev/docs/assets/p_cat2.png",
             nonHungryCat: "https://reactnative.dev/docs/assets/p_cat1.png",
         }
+    },
+    apiConstants: {
+        apiCatFacts: {
+            baseUrl: 'https://cat-fact.herokuapp.com',
+            endpointCatFacts: '/facts',
+        }
     }
-} 
+}
 
 export default systemConstants;

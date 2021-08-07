@@ -4,6 +4,7 @@ import systemConstants from "../Utility/SystemConstants";
 import textConstants from "../Utility/TextConstants";
 import { get, post } from "../Api/ApiHandler";
 import Styles from "../Utility/Styles";
+import ApiCatFacts from "../Api/ApiCatFacts";
 
 const Cat = (props) => {
 
@@ -17,10 +18,9 @@ const Cat = (props) => {
   // [<getter>, <setter>] = useState(<initialValue>)
   const [isCatHungry, setIsCatHungry] = useState(true);
 
-  textConstants
-
   useEffect(async () => {
     const x = await get('https://thatcopy.pw/catapi/rest/');
+    // const y = await ApiCatFacts(); TODO figure out why ApiCatFacts doesn't work, something to do with promises
   }, []);
 
   return (
