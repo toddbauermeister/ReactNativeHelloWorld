@@ -2,6 +2,7 @@ Functionality:
 - Write an API to fetch some data
 - Use this data to start expermimenting with the front-end
 - Add ESLint (what is a nice profile, maybe other than Airbnb?) https://xenox.dev/eslint-the-easy-but-complete-guide/
+- Add Typescript type checking via a jsonconfig.json filenpm audit fix
 - Error handling in Api.js
 
 Learning:
