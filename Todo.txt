@@ -1,6 +1,6 @@
 Functionality:
 - Write an API to fetch some data
-- Use this data to start expermimenting with the front-end
+- Use this data to start experimenting with the front-end
 - Add ESLint (what is a nice profile, maybe other than Airbnb?) https://xenox.dev/eslint-the-easy-but-complete-guide/
 - Add Typescript type checking via a jsonconfig.json filenpm audit fix
 - Error handling in Api.js
@@ -11,4 +11,4 @@ Learning:
 - Styling in react native
 - Types of js imports (I'm used to export const or export default) 
 - Auto add missing imports in vsCode
-- Fix npm vulnerabilities
+- Fix npm vulnerabilities 
